@@ -28,7 +28,7 @@ for key in sorted(dir.keys() , key = lambda x: x.count("/"), reverse = True):
 print(sum([x for x in dir.values() if x < 100000]))
 
 # part 2
-available = 70_000_000 - dir["/"]
-at_least = 30_000_000 - available
+available = 70000000 - dir["/"]
+at_least = 30000000 - available
 
 print(min([x for x in dir.values() if x > at_least and x < available]))
